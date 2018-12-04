@@ -1,0 +1,279 @@
+* { margin: 0; padding: 0;}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0dtheg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#installBtn {
+  display: none;
+  background-color: #282c34;
+  color: white;
+}
+// HEADER
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3.5rem;
+  background-color: #2962FF;
+  color: white;
+  picture {
+    display: none;
+    margin-left: 0.75rem;
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 3rem;
+  a {
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    &.activeLink {
+      text-decoration: underline;
+      color: #2962FF;
+    }
+  }
+  @media (max-width: 800px) {
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+    position: fixed;
+    background-color: white;
+    a {
+      width: 90%;
+      padding-left: 10%;
+    }
+  }
+}
+
+.coolCode p{
+  padding: 2rem;
+}
+
+// BANNER
+section.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+  picture {
+    width: 35%;
+    height: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  span.bannerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    picture {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// TECH
+section.tech {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+  article {
+    width: 20%;
+    margin: 2rem;
+    text-align: center;
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        width: 50%;
+        margin: 0.25rem 0;
+      }
+    }
+  }
+  hr { 
+    margin-top: 1%;
+    width: 0.1rem;
+    border: 1px solid black;
+    background-color: black;
+    @media(max-width: 800px) {
+      width: 80%;
+      height: 0.1rem;
+      margin: 0 10%;
+    }
+  }
+  @media(max-width: 800px) {
+    flex-direction: column;
+    article {
+      width: 100%;
+      margin: 2rem 0;
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+      li {
+        display: inline-block;
+        width: 50%;
+        margin: 0.25rem 0;
+      }
+    }
+  }
+}
+
+// EXPERIENCE
+section.experience {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .experienceItems {
+    display: flex;
+    flex-direction: row;
+  }
+  .experienceItem {
+    align-self: flex-start;
+    width: 33%;
+    text-align: center;
+    p {
+      margin: 1rem 2rem;
+      text-align: left;
+      &:last-child {
+        margin-right: 1rem;
+      }
+    }
+  }
+  @media(max-width: 800px) {
+    .experienceItems {
+      flex-direction: column;
+    }
+    .experienceItem {
+      width: auto;
+      margin-left: 1rem;
+      h3 {
+        text-align: left;
+      }
+      p {
+        margin: 1rem 1rem;
+      }
+    }
+  }
+}
+
+// ABOUT
+section.about {
+  margin-top: 2rem;
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  div {
+    margin: 1rem;
+    h3 {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-left: 1rem;
+    }
+  }
+  .hobbies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    h3 {
+      width: 100%;
+    }
+    .slide {
+      width: 22.5%;
+      border: 1px solid rgba(0,0,0,0.25);
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+      }
+      span {
+        margin: 1rem;
+        height: auto;
+        h4 {
+          margin-bottom: 0.5rem;
+        }
+        p {
+          margin-left: 0;
+        }
+      }
+    }
+    @media(max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      .slide {
+        width: 90%;
+        border: none;
+      }
+    }
+    @media(max-width: 1100px) and (min-width:800px) {
+      .slide {
+        width: 25%;
+      }
+    }
+  }
+}
