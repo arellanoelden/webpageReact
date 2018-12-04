@@ -1,0 +1,205 @@
+section.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
+}
+section.banner picture {
+  width: 35%;
+  height: 100%;
+}
+section.banner picture img {
+  width: 100%;
+}
+section.banner span.bannerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+}
+@media (max-width: 800px) {
+  section.banner {
+    flex-direction: column;
+  }
+  section.banner picture {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+section.tech {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #2962FF;
+}
+section.tech h2 {
+  text-align: center;
+  margin: 1rem 0;
+  width: 100%;
+  color: white;
+}
+section.tech div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+section.tech div article {
+  display: grid;
+  grid-template-rows: 25% 75%;
+  width: 35%;
+  height: 20vh;
+  margin-bottom: 1.5rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+section.tech div article h3 {
+  margin-top: 0.75rem;
+}
+section.tech div article ul {
+  list-style: none;
+}
+section.tech div article ul li {
+  display: inline-block;
+  width: 50%;
+  margin: 0.25rem 0;
+}
+@media (max-width: 800px) {
+  section.tech {
+    flex-direction: column;
+  }
+  section.tech h2 {
+    margin-bottom: 0;
+  }
+  section.tech div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  section.tech div article {
+    width: 90%;
+    margin: 1rem 0;
+  }
+  section.tech div article ul li {
+    display: inline-block;
+    width: 50%;
+    margin: 0.25rem 0;
+  }
+  section.tech div article h3 {
+    margin-top: 0.5rem;
+  }
+  section.tech div article:last-child {
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+section.experience {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.experience h2 {
+  margin-bottom: 1rem;
+}
+section.experience .experienceItems {
+  display: flex;
+  flex-direction: row;
+}
+section.experience .experienceItem {
+  align-self: flex-start;
+  width: 33%;
+  text-align: center;
+}
+section.experience .experienceItem p {
+  margin: 1rem 2rem;
+  text-align: left;
+}
+section.experience .experienceItem p:last-child {
+  margin-right: 1rem;
+}
+@media (max-width: 800px) {
+  section.experience .experienceItems {
+    flex-direction: column;
+  }
+  section.experience .experienceItem {
+    width: auto;
+    margin-left: 1rem;
+  }
+  section.experience .experienceItem h3 {
+    text-align: left;
+  }
+  section.experience .experienceItem p {
+    margin: 1rem 1rem;
+  }
+}
+
+section.about {
+  margin-top: 2rem;
+}
+section.about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section.about div {
+  margin: 1rem;
+}
+section.about div h3 {
+  margin-bottom: 1rem;
+}
+section.about div p {
+  margin-left: 1rem;
+}
+section.about .hobbies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+section.about .hobbies h3 {
+  width: 100%;
+}
+section.about .hobbies .slide {
+  width: 22.5%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+section.about .hobbies .slide img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+section.about .hobbies .slide span {
+  margin: 1rem;
+  height: auto;
+}
+section.about .hobbies .slide span h4 {
+  margin-bottom: 0.5rem;
+}
+section.about .hobbies .slide span p {
+  margin-left: 0;
+}
+@media (max-width: 800px) {
+  section.about .hobbies {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.about .hobbies .slide {
+    width: 90%;
+    border: none;
+  }
+}
+@media (max-width: 1100px) and (min-width: 800px) {
+  section.about .hobbies .slide {
+    width: 25%;
+  }
+}
+
+/*# sourceMappingURL=homepage.css.map */

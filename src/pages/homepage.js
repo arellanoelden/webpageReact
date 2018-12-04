@@ -3,6 +3,7 @@ import Languages from '../components/languages';
 import Experience from '../components/experience';
 import About from '../components/about';
 import Banner from '../components/banner';
+import '../styles/homepage.css';
 
 class homePage extends Component {
   render() {

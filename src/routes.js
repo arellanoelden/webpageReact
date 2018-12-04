@@ -6,6 +6,5 @@ import HomePage from './homepage';
 export default (
   <Route path="/" component={App}>
     <Route exact path="/" component={HomePage} />
-    <Route path="courses" component={HomePage} />
   </Route>
 );

@@ -17,8 +17,7 @@ class header extends Component {
   }
 
   toggleMenu() {
-     var nav = this.nav.current;
-     console.log(this.nav.current);
+     
   }
   
   render() {

@@ -1,0 +1,203 @@
+// BANNER
+section.banner {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 2rem;
+picture {
+    width: 35%;
+    height: 100%;
+    img {
+    width: 100%;
+    }
+}
+span.bannerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+}
+@media (max-width: 800px) {
+    flex-direction: column;
+    picture {
+    width: 100%;
+    margin-bottom: 2rem;
+    }
+}
+}
+
+// TECH
+section.tech {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #2962FF;
+    h2 {
+        text-align: center;
+        margin: 1rem 0;
+        width: 100%;
+        color: white;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        article {
+            display: grid;
+            grid-template-rows: 25% 75%;
+            width: 35%;
+            height: 20vh;
+            margin-bottom: 1.5rem;
+            box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+            background-color: white;
+            border-radius: 0.5rem;
+            text-align: center;
+            h3 {
+                margin-top: 0.75rem;
+            }
+            ul { 
+                list-style: none;
+                li {
+                    display: inline-block;
+                    width: 50%;
+                    margin: 0.25rem 0;
+                } 
+            }
+        }
+    } 
+    @media(max-width: 800px) {
+        flex-direction: column;
+        h2 {
+            margin-bottom: 0;
+        }
+        div {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            article {
+                width: 90%;
+                margin: 1rem 0;
+                ul {
+                    li {
+                        display: inline-block;
+                        width: 50%;
+                        margin: 0.25rem 0;
+                    }
+                }
+                h3 {
+                    margin-top: 0.5rem;
+                }
+                &:last-child {
+                    margin: 0 0 1.5rem 0;
+                }
+            } 
+        }
+    }
+}
+
+// EXPERIENCE
+section.experience {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        margin-bottom: 1rem;
+    }
+    .experienceItems {
+        display: flex;
+        flex-direction: row;
+    }
+    .experienceItem {
+        align-self: flex-start;
+        width: 33%;
+        text-align: center;
+        p {
+            margin: 1rem 2rem;
+            text-align: left;
+            &:last-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+    @media(max-width: 800px) {
+        .experienceItems {
+            flex-direction: column;
+        }
+        .experienceItem {
+            width: auto;
+            margin-left: 1rem;
+            h3 {
+                text-align: left;
+            }
+            p {
+                margin: 1rem 1rem;
+            }
+        }
+    }
+}
+
+// ABOUT
+section.about {
+    margin-top: 2rem;
+    h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    div {
+        margin: 1rem;
+        h3 {
+        margin-bottom: 1rem;
+        }
+        p {
+        margin-left: 1rem;
+        }
+    }
+    .hobbies {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        h3 {
+        width: 100%;
+        }
+        .slide {
+        width: 22.5%;
+        border: 1px solid rgba(0,0,0,0.25);
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+        }
+        span {
+            margin: 1rem;
+            height: auto;
+            h4 {
+            margin-bottom: 0.5rem;
+            }
+            p {
+            margin-left: 0;
+            }
+        }
+        }
+        @media(max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+        .slide {
+            width: 90%; 
+            border: none;
+        }
+        }
+        @media(max-width: 1100px) and (min-width:800px) {
+        .slide {
+            width: 25%;
+        }
+        }
+    }
+}
