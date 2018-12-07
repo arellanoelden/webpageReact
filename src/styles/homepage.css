@@ -29,6 +29,7 @@ section.banner span.bannerInfo {
 }
 
 section.tech {
+  padding: 2rem 0;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -37,7 +38,7 @@ section.tech {
 }
 section.tech h2 {
   text-align: center;
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
   width: 100%;
   color: white;
 }
@@ -50,16 +51,15 @@ section.tech div {
 section.tech div article {
   display: grid;
   grid-template-rows: 25% 75%;
-  width: 35%;
-  height: 20vh;
-  margin-bottom: 1.5rem;
+  width: 30%;
+  padding-bottom: 1rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   background-color: white;
   border-radius: 0.5rem;
   text-align: center;
 }
 section.tech div article h3 {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
 }
 section.tech div article ul {
   list-style: none;
@@ -99,64 +99,112 @@ section.tech div article ul li {
 }
 
 section.experience {
-  margin-top: 2rem;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #F2C14E;
 }
 section.experience h2 {
   margin-bottom: 1rem;
+  color: white;
 }
 section.experience .experienceItems {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 section.experience .experienceItem {
-  align-self: flex-start;
-  width: 33%;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  width: 30%;
   text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0.5rem;
 }
 section.experience .experienceItem p {
   margin: 1rem 2rem;
   text-align: left;
 }
-section.experience .experienceItem p:last-child {
-  margin-right: 1rem;
+section.experience .experienceItem h3 {
+  margin-top: 0.5rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1100px) and (min-width: 767px) {
   section.experience .experienceItems {
     flex-direction: column;
   }
   section.experience .experienceItem {
-    width: auto;
-    margin-left: 1rem;
-  }
-  section.experience .experienceItem h3 {
-    text-align: left;
+    grid-template-rows: 15% 85%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    height: 20vh;
   }
   section.experience .experienceItem p {
     margin: 1rem 1rem;
   }
 }
+@media (max-width: 767px) {
+  section.experience .experienceItems {
+    flex-direction: column;
+  }
+  section.experience .experienceItem {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    height: 30vh;
+  }
+  section.experience .experienceItem p {
+    margin: 1rem 1rem;
+  }
+}
+@media (max-width: 350px) {
+  section.experience .experienceItem {
+    height: auto;
+  }
+}
 
 section.about {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background-color: #FF5964;
 }
 section.about h2 {
   text-align: center;
   margin-bottom: 1rem;
+  color: white;
+  width: 100%;
 }
-section.about div {
-  margin: 1rem;
+section.about .background {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 92.5%;
 }
-section.about div h3 {
+section.about .background h3 {
   margin-bottom: 1rem;
 }
-section.about div p {
-  margin-left: 1rem;
+@media (max-width: 800px) {
+  section.about .background {
+    width: 82.5%;
+  }
+  section.about .background h3 {
+    text-align: center;
+  }
 }
 section.about .hobbies {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 92.5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -164,16 +212,17 @@ section.about .hobbies {
 }
 section.about .hobbies h3 {
   width: 100%;
+  margin-bottom: 1rem;
 }
 section.about .hobbies .slide {
-  width: 22.5%;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  width: 90%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
 }
 section.about .hobbies .slide img {
-  width: 100%;
-  height: 20rem;
+  width: 10rem;
+  height: 10rem;
   object-fit: cover;
 }
 section.about .hobbies .slide span {
@@ -186,19 +235,53 @@ section.about .hobbies .slide span h4 {
 section.about .hobbies .slide span p {
   margin-left: 0;
 }
-@media (max-width: 800px) {
+section.about .hobbies .slide:nth-child(even) picture {
+  order: 1;
+}
+section.about .hobbies .slide:nth-child(even) span {
+  margin-left: 0;
+}
+section.about .hobbies .slide:nth-child(odd) span {
+  margin-right: 0;
+}
+@media (max-width: 767px) {
   section.about .hobbies {
     flex-direction: column;
     align-items: center;
+    width: 82.5%;
+  }
+  section.about .hobbies h3 {
+    text-align: center;
   }
   section.about .hobbies .slide {
+    flex-direction: column;
     width: 90%;
     border: none;
   }
+  section.about .hobbies .slide img {
+    width: 100%;
+    height: 15rem;
+  }
+  section.about .hobbies .slide h4 {
+    text-align: center;
+  }
+  section.about .hobbies .slide:nth-child(even) picture, section.about .hobbies .slide:nth-child(odd) picture {
+    order: 0;
+  }
+  section.about .hobbies .slide:nth-child(even) span, section.about .hobbies .slide:nth-child(odd) span {
+    margin: 1rem 0;
+  }
 }
-@media (max-width: 1100px) and (min-width: 800px) {
-  section.about .hobbies .slide {
-    width: 25%;
+@media (max-width: 1000px) and (min-width: 767px) {
+  section.about .hobbies {
+    width: 82.5%;
+  }
+  section.about .hobbies .slide img {
+    height: 13rem;
+    width: 13rem;
+  }
+  section.about .hobbies .slide span {
+    margin-top: 0;
   }
 }
 

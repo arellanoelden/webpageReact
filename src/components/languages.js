@@ -4,7 +4,7 @@ class languages extends Component {
   render() {
     return(
       <section className="tech container">
-        <h2>Languages</h2>
+        <h2>Languages:</h2>
         <div className="languageContainer">
           <article>
             <h3>Proficient:</h3>

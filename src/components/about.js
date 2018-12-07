@@ -36,11 +36,11 @@ class about extends Component {
       <section className="about">
         <h2>About:</h2>
         <div className="background">
-          <h3>Background:</h3>
+          <h3>Background</h3>
           <p>I have lived in California my entire life and spent most of life living in Victorville. When I first moved there was a pretty small town but after so many years is actually rather large. It may still be known as "that stop on the way to Vegas" but I enjpyed my time there. Growing up I was always fascinated with computers and technology. I would keep up to date with cool apps for my phone or the newest smartphone. Due to this I pursued a career in computer science and have found a passion in front end development. Outside of technology, I also have always enjoyed active activites such as hiking, sports, running, etc. as I always try and stay active. I played soccer competitively for about 15 years but really enjoy playing just about any sport or game.</p>
         </div>
         <div className="hobbies">
-          <h3>Hobbies:</h3>
+          <h3>Hobbies</h3>
             <div className="slide">
               <picture className="lazyPic">
                 <img ref="img" alt="text info" src={require("../images/barca.jpg")} />
