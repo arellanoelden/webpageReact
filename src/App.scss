@@ -19,20 +19,22 @@ header {
       display: block;
     }
   }
+
 }
 
 // NAVBAR
 nav {
   display: flex;
-  justify-content: space-evenly;
-  height: 3rem;
+  justify-content: flex-start;
+  background-color: $primary;
+  padding-bottom: 1rem;
   a {
-    margin-top: 1rem;
     text-decoration: none;
-    color: black;
+    color: white;
+    margin: 0 0.75rem;
     &.activeLink {
       text-decoration: underline;
-      color: $primary;
+      color: white;
     }
   }
   @media (max-width: 800px) {
