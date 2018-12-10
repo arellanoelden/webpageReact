@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/coolcode.css';
 
 class homePage extends Component {
   render() {

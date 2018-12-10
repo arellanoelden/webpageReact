@@ -1,4 +1,5 @@
 $primary: #2962FF;
+$primary: #3C70FF;
 
 * { margin: 0; padding: 0;}
 
@@ -7,6 +8,7 @@ $primary: #2962FF;
   background-color: #282c34;
   color: white;
 }
+
 // HEADER
 header {
   height: 3.5rem;
@@ -21,7 +23,7 @@ header {
   }
 
 }
-
+ 
 // NAVBAR
 nav {
   display: flex;
@@ -54,8 +56,4 @@ nav {
 
 .container {
   width: 100%;
-}
-
-.coolCode p{
-  padding: 2rem;
-}
+} 

@@ -63,7 +63,8 @@ section.tech {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #2962FF;
+    // background-color: #2962FF;
+    background-color: #3C70FF;
     h2 {
         text-align: center;
         margin: 0 0 1rem 0;
@@ -217,7 +218,7 @@ section.about {
         padding: 1rem;
         width: 92.5%;
         h3 {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
         @media(max-width: 800px) {
             width: 82.5%;

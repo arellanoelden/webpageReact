@@ -65,7 +65,7 @@ section.tech {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #2962FF;
+  background-color: #3C70FF;
 }
 section.tech h2 {
   text-align: center;
@@ -219,7 +219,7 @@ section.about .background {
   width: 92.5%;
 }
 section.about .background h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 800px) {
   section.about .background {
