@@ -8,7 +8,18 @@ $primary: #3C70FF;
   background-color: #282c34;
   color: white;
 }
+body {
+  background-color: $primary;
+  min-height: 100vh; 
+}
 
+.headerContainer {
+  height: 1vh;
+  background-color: $primary;
+  @media(max-width: 800px) {
+    height: 6.5vh;
+  }
+}
 // HEADER
 header {
   height: 3.5rem;
@@ -20,6 +31,10 @@ header {
     @media (max-width: 800px) {
       display: block;
     }
+    @media(min-width: 767px) and (max-width: 1000px) {
+      margin-left: 0.75rem;
+      padding-top: 1.125rem;
+    }
   }
 
 }
@@ -29,7 +44,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   background-color: $primary;
-  padding-bottom: 1rem;
+  height: 3vh;
   a {
     text-decoration: none;
     color: white;

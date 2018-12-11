@@ -1,6 +1,8 @@
 section.projects {
+  min-height: 99vh;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
   // background-color: #2962FF;
