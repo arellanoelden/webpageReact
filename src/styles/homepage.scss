@@ -318,3 +318,12 @@ section.about {
         }
     }
 }
+
+@media screen and (orientation:landscape) {
+  section.banner {
+    min-height: 100vh;
+  }
+  section.experience div.experienceItem {
+    height: auto;
+  }
+}

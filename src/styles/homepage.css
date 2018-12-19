@@ -316,4 +316,14 @@ section.about .hobbies .slide:nth-child(odd) span {
   }
 }
 
+@media screen and (orientation: landscape) {
+  section.banner {
+    min-height: 100vh;
+  }
+
+  section.experience div.experienceItem {
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=homepage.css.map */

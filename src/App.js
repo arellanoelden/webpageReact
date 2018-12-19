@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './components/header';
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import Homepage from './pages/homepage';
 import Coolcode from './pages/coolcode';
@@ -16,18 +15,25 @@ class App extends Component {
   }
 
   toggleMenu() {
-    
+    console.log(this.nav.current.classList.toggle("mobileMenu"));
   }
   render() {
     return (
       <div className="contentContainer">
-        <Header />
+        <header ref={this.header} className="header">
+          <picture >
+            <source srcSet={require('./images/hamburger.svg')} />
+            <img onClick={this.toggleMenu} alt="hamburgerMenu" src={require('./images/hamburger.png')} />
+          </picture>
+        </header>
         <Router>
             <div>
-              <nav ref={this.nav}>
+              <nav ref={this.nav} onClick={this.toggleMenu}>
+                <span className="linksContainer">
                   <NavLink exact to="/" activeClassName="activeLink">Home</NavLink>
                   <NavLink exact to="/projects" activeClassName="activeLink">Projects</NavLink>
-                  <NavLink exact to="/coolCode" activeClassName="activeLink">CoolCode</NavLink>
+                  <NavLink exact to="/coolCode" activeClassName="activeLink">Tips & Tricks</NavLink>
+                </span>
               </nav>
               <Route exact path="/" component={Homepage} />
               <Route exact path="/projects" component={Projects} />

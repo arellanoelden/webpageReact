@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import { NavLink } from "react-router-dom";
 
 class header extends Component {
   
   
   constructor(props) {
       super(props);
-      //this.state = {
-      //  games: [["Halo 5","XBOX ONE","4/5"],["Fortnite","PC","4.5/5"],["Overwatch","PC","5/5"]]
-      //}
       this.nav = React.createRef();
       this.header = React.createRef();
       this.toggleMenu = this.toggleMenu.bind(this);
