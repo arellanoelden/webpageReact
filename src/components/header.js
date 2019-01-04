@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from "react-router-dom";
 
 class header extends Component {
   
@@ -26,7 +25,7 @@ class header extends Component {
         </header>
       </div>
     );
-  }
+  } 
 }
 
 export default header;

@@ -43,7 +43,7 @@ class about extends Component {
           <h3>Hobbies</h3>
             <div className="slide">
               <picture className="lazyPic">
-                <img ref="img" alt="text info" src={require("../images/barca.jpg")} />
+                <img ref="img" alt="text info" src={require("../images/barca_800w.jpg")} />
               </picture>
               <span>
                 <h4>Soccer</h4>
@@ -52,7 +52,7 @@ class about extends Component {
             </div>
             <div className="slide">
               <picture className="lazyPic">
-                <img alt="text info" src={require("../images/got.jpeg")} />
+                <img alt="text info" src={require("../images/got_800w.jpeg")} />
               </picture>
               <span>
                 <h4>Tv/Movies</h4>
@@ -61,7 +61,7 @@ class about extends Component {
             </div>
             <div className="slide">
               <picture className="lazyPic">
-                <img alt="text info" src={require("../images/tech.jpg")} />
+                <img alt="text info" src={require("../images/tech_800w.jpg")} />
               </picture>
               <span>
                 <h4>Tech</h4>

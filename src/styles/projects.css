@@ -5,42 +5,32 @@ section.projects {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  background-color: #3C70FF;
-}
-section.projects h1 {
-  align-self: flex-start;
-  padding: 1rem 2rem;
-  color: white;
-}
-section.projects .project {
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 90%;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  border: 1px solid black;
-  background-color: white;
-}
-section.projects .project h2 {
-  width: 50%;
-  margin-bottom: 0.5rem;
-}
-section.projects .project a {
-  width: 50%;
-  text-align: right;
-  margin-bottom: 0.25rem;
-}
-@media (max-width: 767px) {
+  background-color: #3C70FF; }
   section.projects h1 {
-    padding: 1rem 1.5rem;
-  }
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    color: white; }
   section.projects .project {
-    width: 80%;
-  }
-}
-
-/*# sourceMappingURL=projects.css.map */
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: white; }
+    section.projects .project h2 {
+      width: 50%;
+      margin-bottom: 0.5rem; }
+    section.projects .project a {
+      width: 50%;
+      text-align: right;
+      margin-bottom: 0.25rem; }
+  @media (max-width: 767px) {
+    section.projects h1 {
+      padding: 1rem 1.5rem; }
+    section.projects .project {
+      width: 80%; } }

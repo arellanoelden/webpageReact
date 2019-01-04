@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "imagemin": "^6.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router": "^4.3.1",
@@ -11,7 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "gulp images && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -23,5 +24,16 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-gm": "0.0.9",
+    "gulp-image-resize": "^0.13.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-webp": "^3.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-webp": "^5.0.0"
+  }
 }

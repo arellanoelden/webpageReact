@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/App.css';
 // import { Route } from "react-router-dom";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import asyncComponent from "./components/AsyncComponent";

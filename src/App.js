@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/App.css';
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import Homepage from './pages/homepage';
 import Coolcode from './pages/coolcode';

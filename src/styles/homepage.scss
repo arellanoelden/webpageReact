@@ -1,9 +1,9 @@
 // BANNER
 section.banner {
-    display: grid;
+    display: grid; 
     grid-template-columns: 50% 5% 45%;
     grid-template-rows: 25% 25% 25% 25%;
-    background-image: url('../images/Hero2_1600.jpg');
+    background-image: url('../images/Hero_2000w.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -28,7 +28,7 @@ section.banner {
     @media (max-width:767px) {
         left: 40%;
         background-position: center;
-        background-image: url('../images/banner.jpeg');
+        background-image: url('../images/banner_2000w.jpeg');
         display: flex;
         justify-content: flex-start;
         span.bannerInfo {
@@ -64,7 +64,7 @@ section.tech {
     flex-direction: row;
     flex-wrap: wrap;
     // background-color: #2962FF;
-    background-color: #3C70FF;
+    background-color: #5FAD56;
     h2 {
         text-align: center;
         margin: 0 0 1rem 0;
