@@ -64,8 +64,6 @@ section.tech {
     width: 100%;
     justify-content: space-evenly; }
     section.tech div article {
-      display: grid;
-      grid-template-rows: 25% 75%;
       width: 30%;
       padding-bottom: 1rem;
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
@@ -116,8 +114,6 @@ section.experience {
     flex-direction: row;
     justify-content: space-evenly; }
   section.experience .experienceItem {
-    display: grid;
-    grid-template-rows: 10% 90%;
     width: 30%;
     text-align: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);

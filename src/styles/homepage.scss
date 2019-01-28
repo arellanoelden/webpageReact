@@ -63,7 +63,6 @@ section.tech {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    // background-color: #2962FF;
     background-color: #5FAD56;
     h2 {
         text-align: center;
@@ -77,8 +76,6 @@ section.tech {
         width: 100%;
         justify-content: space-evenly;
         article {
-            display: grid;
-            grid-template-rows: 25% 75%;
             width: 30%;
             padding-bottom: 1rem;
             box-shadow: 10px 10px 20px rgba(0,0,0,.1);
@@ -146,8 +143,8 @@ section.experience {
         justify-content: space-evenly;
     }
     .experienceItem {
-        display: grid;
-        grid-template-rows: 10% 90%;
+        // display: grid;
+        // grid-template-rows: 10% 90%;
         width: 30%;
         text-align: center;
         box-shadow: 10px 10px 20px rgba(0,0,0,.1);
