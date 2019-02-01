@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import Picture from './picture';
 class about extends Component {
   
   constructor(props) {
@@ -10,6 +10,7 @@ class about extends Component {
         this.interval = "";
         this.opacity = this.opacity.bind(this);
         this.frame = this.frame.bind(this);
+        this.text="barca_800w";
   }
 
   opacity(event) {
@@ -42,27 +43,30 @@ class about extends Component {
         <div className="hobbies">
           <h3>Hobbies</h3>
             <div className="slide">
-              <picture className="lazyPic">
+              <Picture image='barca' classes='lazyPic' alt='logo of my favorite soccer team, barcalona'/>
+              {/* <picture className="lazyPic">
                 <img ref="img" alt="text info" src={require("../images/barca_800w.jpg")} />
-              </picture>
+              </picture> */}
               <span>
                 <h4>Soccer</h4>
                 <p> From about age 4 to age 19 I played soccer constantly. Sometimes even being on 2 teams at once. Practice every single day, games on weekeneds etc. Nowadays I dont get to play every day and I certainly am not as good as I used to be but I still enjoy going out to play and having a good time. I try and keep up with the games and still find time to join some teams and keep playing the sport I love.</p>
               </span>
             </div>
             <div className="slide">
-              <picture className="lazyPic">
+              <Picture image='got' classes='lazyPic' alt='image of one of my favorite tv shows, game of thrones'/>
+              {/* <picture className="lazyPic">
                 <img alt="text info" src={require("../images/got_800w.jpeg")} />
-              </picture>
+              </picture> */}
               <span>
                 <h4>Tv/Movies</h4>
                 <p> I have always been a big fan of movies and Tv shows. Whether it be Game of Thrones, Daredevil, Breaking Bad etc always enjoy a good show. Likewise I love watching movies whether they be a marvel movie, book of life, creed, etc. I even have a DVD collection going(I know at this point DVD players are kinda oldschool but I like having them). </p>
               </span>
             </div>
             <div className="slide">
-              <picture className="lazyPic">
+              <Picture image='tech' classes='lazyPic' alt='image of some technology with a title of "WEB DEVELOPMENT"'/>
+              {/* <picture className="lazyPic">
                 <img alt="text info" src={require("../images/tech_800w.jpg")} />
-              </picture>
+              </picture> */}
               <span>
                 <h4>Tech</h4>
                 <p> As you can imagine with my field of work I am a big fan of techology. Even when I was younger I was excited for the newest smartphone specs. I have built my own computer and decided to get my bachelors in computer engineering. Specifically I am interested in web development and so far have been enjoying it even if I still have alot to learn. </p>
