@@ -4,33 +4,32 @@ class picture extends Component {
   
   constructor(props) {
     super(props);
-    this.image2000Wp = require("../images/" + this.props.image + "_2000w.webp");
-    this.image1600Wp = require("../images/" + this.props.image + "_1600w.webp");
-    this.image1200Wp = require("../images/" + this.props.image + "_1200w.webp");
-    this.image1000Wp = require("../images/" + this.props.image + "_1000w.webp");
-    this.image800Wp = require("../images/" + this.props.image + "_800w.webp");
-    this.image600Wp = require("../images/" + this.props.image + "_600w.webp");
-    this.queryWebp = this.image2000Wp + ' 2000w, ' + this.image1600Wp + ' 1600w, ' + this.image1200Wp + ' 1200w, ' + this.image1000Wp + ' 1000w, ' + this.image800Wp + ' 800w, ' + this.image600Wp + ' 600w';
 
-    this.image2000J = require("../images/" + this.props.image + "_2000w.jpg");
-    this.image1600J = require("../images/" + this.props.image + "_1600w.jpg");
-    this.image1200J = require("../images/" + this.props.image + "_1200w.jpg");
-    this.image1000J = require("../images/" + this.props.image + "_1000w.jpg");
-    this.image800J = require("../images/" + this.props.image + "_800w.jpg");
-    this.image600J = require("../images/" + this.props.image + "_600w.jpg");
-    this.queryJpg= this.image2000J + ' 2000w, ' + this.image1600J + ' 1600w, ' + this.image1200J + ' 1200w, ' + this.image1000J + ' 1000w, ' + this.image800J + ' 800w, ' + this.image600J + ' 600w';
+    this.constructQuery = this.constructQuery.bind(this);
+    this.webpQuery = this.constructQuery(this.props.image, '.webp');
+    this.jpgQuery = this.constructQuery(this.props.image, '.jpg');
+  }
+
+  constructQuery(imageName, format) {
+    const sizes = ['2000w','1600w','1200w','800w','600w'];
+    let imageQuery = '';
+    sizes.forEach(size => {
+      let image = require('../images/' + imageName + '_' + size + format);
+      imageQuery += image + ` ${size},`; 
+    })
+    return imageQuery;
   }
 
   render() {
     return (
         <picture className={this.props.classes}>
-          <source srcSet={this.queryWebp}
+          <source srcSet={this.webpQuery}
             type="image/webp" 
-            sizes="20vw, (max-width: 800px) 80vw" />
-          <source srcSet={this.queryJpg}
-            type="image/webp" 
-            sizes="20vw, (max-width: 800px) 80vw" />
-          <img src={require('../images/' + this.props.image + "_800w.webp")} alt={this.props.alt} />
+            sizes={this.props.sizes} />
+          <source srcSet={this.jpgQuery}
+            type="image/jpg" 
+            sizes={this.props.sizes} />
+          <img src={require('../images/' + this.props.image + "_800w.jpg")} alt={this.props.alt} />
         </picture>
     );
   } 
