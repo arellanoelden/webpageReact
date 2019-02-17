@@ -13,11 +13,6 @@ class router extends Component {
     super(props);
     this.nav = React.createRef();
     this.header = React.createRef();
-    this.toggleMenu = this.toggleMenu.bind(this);
-  }
-
-  toggleMenu() {
-    console.log(this.nav.current.classList.toggle("mobileMenu"));
   }
   render() {
     return (
@@ -30,7 +25,7 @@ class router extends Component {
         </header>
         <Router>
           <div>
-            <nav ref={this.nav} onClick={this.toggleMenu}>
+            <nav ref={this.nav}>
               <span className="linksContainer">
                   <NavLink exact to="/" activeClassName="activeLink">Home</NavLink>
                   <NavLink exact to="/projects" activeClassName="activeLink">Projects</NavLink>
