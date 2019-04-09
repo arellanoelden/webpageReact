@@ -10,11 +10,3 @@ ReactDOM.render(<Routes />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.register();
-
-
-//document.addEventListener("DOMContentLoaded", function() {
-//  let lazyImages = [].slice.call(document.querySelectorAll("picture.lazyPic img"));
-//  lazyImages.forEach(function(lazyImg) {
-//    lazyImg.src = lazyImg.dataset.src;
-//  });
-//});

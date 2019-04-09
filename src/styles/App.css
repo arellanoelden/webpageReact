@@ -9,7 +9,7 @@
 
 body {
   background-color: #3C70FF;
-  min-height: 100vh; }
+  min-height: 90vh; }
 
 .headerContainer {
   height: 1vh;
@@ -19,8 +19,11 @@ body {
       height: 6.5vh; } }
 
 header {
-  height: 3.5rem;
+  height: 0;
   background-color: #3C70FF; }
+  @media (max-width: 800px) {
+    header {
+      height: 3.5rem; } }
   header picture {
     display: none;
     margin-left: 0.75rem;
@@ -38,7 +41,7 @@ nav {
   justify-content: flex-start;
   background-color: #3C70FF;
   height: auto;
-  padding-bottom: 0.5rem; }
+  padding: 1rem 0.25rem; }
   nav a {
     text-decoration: none;
     color: white;
@@ -48,6 +51,7 @@ nav {
       color: white; }
   @media (max-width: 800px) {
     nav {
+      padding: 0;
       display: none;
       justify-content: flex-start;
       flex-direction: column;

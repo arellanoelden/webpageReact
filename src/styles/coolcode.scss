@@ -1,6 +1,17 @@
 .tips {
+  width: 95%;
+  margin: 0.5rem 2.5%;
   color: white;
-  p{
-    padding: 1rem 2rem;
+  article {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+    color: black;
+    pre {
+      background-color: darkgray;
+    }
   }
 }
