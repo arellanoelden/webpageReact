@@ -7,7 +7,7 @@ class banner extends Component {
         <span className="bannerInfo">
           <h1>Elden Arellano</h1>
           <p className="email">arellanoelden11@yahoo.com</p>
-          <p className="occupation">Assoicate Front End Engineer</p>
+          <p className="occupation">Front End Engineer</p>
         </span>
       </section>
     );
