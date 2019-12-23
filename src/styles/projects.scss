@@ -1,36 +1,36 @@
 section.projects {
-  min-height: 99vh;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #3c70ff;
-  scroll-snap-align: none;
+  scroll-snap-align: center;
   h1 {
     align-self: flex-start;
+    width: 100%;
     padding: 1rem 2rem;
     color: white;
   }
   .project {
-    margin-bottom: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 40%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 0.5rem;
-    padding: 1rem;
-    border: 1px solid black;
-    background-color: white;
     h2 {
-      width: 50%;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
-    a {
-      width: 50%;
-      text-align: right;
-      margin-bottom: 0.25rem;
+    .linksContainer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        padding: 0 1rem;
+      }
     }
   }
   @media (max-width: 767px) {
