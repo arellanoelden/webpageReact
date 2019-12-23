@@ -6,7 +6,7 @@ class homePage extends Component {
     return (
       <div className="tips">
         <h2>JS</h2>
-        <h3>Variable Declarationsfdsf</h3>
+        <h3>Variable Declarations: let, const, var</h3>
         <pre>
           {`let example = 0;
 const example2 = 0;

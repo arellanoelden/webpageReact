@@ -1,11 +1,11 @@
 section.projects {
   min-height: 99vh;
-  height: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  background-color: #3C70FF;
+  background-color: #3c70ff;
+  scroll-snap-align: none;
   h1 {
     align-self: flex-start;
     padding: 1rem 2rem;
@@ -17,7 +17,7 @@ section.projects {
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
-    box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -37,8 +37,8 @@ section.projects {
     h1 {
       padding: 1rem 1.5rem;
     }
-    .project{
+    .project {
       width: 80%;
     }
   }
-}   
+}
