@@ -1,7 +1,11 @@
-$primary: #2962FF;
-$primary: #3C70FF;
+$primary: #3c70ff;
+$sm: "767px";
+$md: "992px";
 
-* { margin: 0; padding: 0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 
 #installBtn {
   display: none;
@@ -9,102 +13,44 @@ $primary: #3C70FF;
   color: white;
 }
 body {
-  background-color: $primary;
-  min-height: 100vh; 
+  min-height: 90vh;
 }
 
-.headerContainer {
-  height: 1vh;
-  background-color: $primary;
-  @media(max-width: 800px) {
-    height: 6.5vh;
-  }
-}
-// HEADER
-header {
-  height: 3.5rem;
-  background-color: $primary;
-  picture {
-    display: none;
-    margin-left: 0.75rem;
-    padding-top: 0.75rem;
-    @media (max-width: 800px) {
-      display: block;
-    }
-    @media(min-width: 767px) and (max-width: 1000px) {
-      margin-left: 0.75rem;
-      padding-top: 1.125rem;
-    }
-  }
-
-}
- 
 // NAVBAR
 nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   background-color: $primary;
   height: auto;
-  padding-bottom: 0.5rem;
+  padding: 1rem 0.25rem;
   a {
     text-decoration: none;
     color: white;
     margin: 0 0.75rem;
     &.activeLink {
       text-decoration: underline;
-      color: white;
-    }
-  }
-  @media (max-width: 800px) {
-    display: none;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: 100vh;
-    width: 65%;
-    position: fixed;
-    background-color: white;
-    a {
-      width: 90%;
-      padding-left: 10%;
-    }
-  }
-}
- 
-@media (max-width: 800px) {
-  nav.mobileMenu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    height: 100vh;
-    position: fixed;
-    width: 100%;
-    display: block;
-    background-color: rgba(0,0,0,0.25);
-    span {
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      background-color: white;
-      height: 100vh;
-      z-index: 5;
-      &:first-child {
-        padding-top: 1rem;
-      }
-      animation-name: open;
-      animation-duration: 0.25s;
-    }
-    @keyframes open {
-      from {width: 0%;}
-      to {width: 80%;}
-    }
-    a {
-      padding: 0.5rem 0;
-      color: $primary;
     }
   }
 }
 
 .container {
   width: 100%;
-} 
+}
+
+.contentContainer {
+  height: 100vh;
+  @media screen and (min-width: $md) {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    > section,
+    > nav {
+      scroll-snap-align: center;
+    }
+  }
+}
+
+.card {
+  box-shadow: 15px 15px 20px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
