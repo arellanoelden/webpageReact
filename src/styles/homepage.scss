@@ -5,17 +5,25 @@ $md: "992px";
 section.banner {
   height: 50vh;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
-  color: white;
   background-image: url("../images/banner_2000w.jpeg");
   background-size: cover;
   background-position: center;
+  .bannerInfo {
+    padding: 1rem;
+    margin: 1rem;
+  }
   @media (min-width: $sm) {
     height: 100vh;
     background-image: url("../images/Hero_2000w.webp");
     justify-content: center;
     align-items: flex-end;
     font-size: 2.5rem;
+    .bannerInfo {
+      margin-right: 5%;
+      padding: 1rem;
+    }
   }
 }
 

@@ -8,7 +8,7 @@ class homePage extends Component {
       <React.Fragment>
         {/* <button id="installBtn">Install</button> */}
         <section className="banner">
-          <span className="bannerInfo">
+          <span className="bannerInfo card">
             <h1>Elden Arellano</h1>
             <p className="email">arellanoelden11@yahoo.com</p>
             <p className="occupation">Front End Engineer</p>
