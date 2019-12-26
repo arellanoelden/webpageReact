@@ -93,6 +93,16 @@ section.experience {
   }
 }
 
+section.experience,
+section.tech {
+  .card {
+    transition: top 1s, opacity 1s;
+    opacity: 0;
+    position: relative;
+    top: 75px;
+  }
+}
+
 // ABOUT
 .slide {
   min-height: 100vh;
@@ -100,6 +110,13 @@ section.experience {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  picture,
+  .card {
+    transition: top 1s, opacity 1s;
+    opacity: 0;
+    position: relative;
+    top: 75px;
+  }
   picture {
     width: 50%;
     padding-top: 1rem;
@@ -132,9 +149,15 @@ section.experience {
       width: 75%;
       height: 75%;
     }
-    &:nth-child(even) picture {
-      order: 1;
-    }
+  }
+}
+
+.slide.isVisible,
+.tech.isVisible {
+  picture,
+  .card {
+    opacity: 1;
+    top: 0;
   }
 }
 
@@ -148,6 +171,15 @@ section.experience {
 
 .slide.computers {
   background-image: linear-gradient(#4299e1 60%, #9f7aea);
+}
+
+@media screen and (min-width: $sm) {
+  .slide.athletic,
+  .slide.computers {
+    picture {
+      order: 1;
+    }
+  }
 }
 
 @media screen and (orientation: landscape) {

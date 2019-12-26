@@ -21,6 +21,10 @@ section.projects {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 0.5rem;
+    transition: top 1s, opacity 1s;
+    opacity: 0;
+    position: relative;
+    top: 75px;
     h2 {
       margin-bottom: 1rem;
     }
@@ -33,6 +37,10 @@ section.projects {
         padding: 0 0.5rem;
       }
     }
+  }
+  &.isVisible .project {
+    opacity: 1;
+    top: 0;
   }
   @media (max-width: 767px) {
     h1 {

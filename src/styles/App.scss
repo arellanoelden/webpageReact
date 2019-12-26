@@ -43,6 +43,7 @@ nav {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     > section,
+    > div,
     > nav {
       scroll-snap-align: center;
     }
