@@ -16,7 +16,7 @@ section.banner {
   }
   @media (min-width: $sm) {
     height: 100vh;
-    background-image: url("../images/Hero_2000w.webp");
+    background-image: url("../images/Hero_2000w.jpg");
     justify-content: center;
     align-items: flex-end;
     font-size: 2.5rem;
@@ -158,6 +158,18 @@ section.tech {
   .card {
     opacity: 1;
     top: 0;
+  }
+}
+
+// remove once intersection observer is working for mobile
+@media screen and (max-width: $md) {
+  .slide,
+  .tech {
+    picture,
+    .card {
+      opacity: 1;
+      top: 0;
+    }
   }
 }
 
