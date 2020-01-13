@@ -5,17 +5,25 @@ $md: "992px";
 section.banner {
   height: 50vh;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
-  color: white;
   background-image: url("../images/banner_2000w.jpeg");
   background-size: cover;
   background-position: center;
+  .bannerInfo {
+    padding: 1rem;
+    margin: 1rem;
+  }
   @media (min-width: $sm) {
     height: 100vh;
-    background-image: url("../images/Hero_2000w.webp");
+    background-image: url("../images/Hero_2000w.jpg");
     justify-content: center;
     align-items: flex-end;
     font-size: 2.5rem;
+    .bannerInfo {
+      margin-right: 5%;
+      padding: 1rem;
+    }
   }
 }
 
@@ -85,6 +93,16 @@ section.experience {
   }
 }
 
+section.experience,
+section.tech {
+  .card {
+    transition: top 1s, opacity 1s;
+    opacity: 0;
+    position: relative;
+    top: 75px;
+  }
+}
+
 // ABOUT
 .slide {
   min-height: 100vh;
@@ -92,6 +110,13 @@ section.experience {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  picture,
+  .card {
+    transition: top 1s, opacity 1s;
+    opacity: 0;
+    position: relative;
+    top: 75px;
+  }
   picture {
     width: 50%;
     padding-top: 1rem;
@@ -102,6 +127,7 @@ section.experience {
   img {
     width: 100%;
     height: 15rem;
+    border-radius: 50%;
     box-shadow: 15px 15px 20px 20px rgba(0, 0, 0, 0.1);
   }
   span {
@@ -122,10 +148,27 @@ section.experience {
     img {
       width: 75%;
       height: 75%;
-      border-radius: 50%;
     }
-    &:nth-child(even) picture {
-      order: 1;
+  }
+}
+
+.slide.isVisible,
+.tech.isVisible {
+  picture,
+  .card {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+// remove once intersection observer is working for mobile
+@media screen and (max-width: $md) {
+  .slide,
+  .tech {
+    picture,
+    .card {
+      opacity: 1;
+      top: 0;
     }
   }
 }
@@ -140,6 +183,15 @@ section.experience {
 
 .slide.computers {
   background-image: linear-gradient(#4299e1 60%, #9f7aea);
+}
+
+@media screen and (min-width: $sm) {
+  .slide.athletic,
+  .slide.computers {
+    picture {
+      order: 1;
+    }
+  }
 }
 
 @media screen and (orientation: landscape) {
