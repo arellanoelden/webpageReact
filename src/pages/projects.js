@@ -92,13 +92,6 @@ class projects extends Component {
           </article>
           <article className="project">
             <h2>Adopt Me:</h2>
-            <a href="https://github.com/arellanoelden/adoptme">
-              <img
-                alt="github logo link to project that is described"
-                src={require("../images/github-logo48.png")}
-                target="_blank"
-              />
-            </a>
             <p>
               Created a fairly straight forward adopt me web app when the user
               can look at what animals are up for adoption based off of
@@ -106,13 +99,22 @@ class projects extends Component {
               created using React and it uses Redux for all of the state
               management.
             </p>
-            <a
-              href="https://adoptme-fac9c.firebaseapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Site
-            </a>
+            <span className="linksContainer">
+              <a
+                href="https://adoptme-fac9c.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </a>
+              <a href="https://github.com/arellanoelden/adoptme">
+                <img
+                  alt="github logo link to project that is described"
+                  src={require("../images/github-logo48.png")}
+                  target="_blank"
+                />
+              </a>
+            </span>
           </article>
           <article className="project">
             <h2>Webpage</h2>
