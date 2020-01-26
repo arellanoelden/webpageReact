@@ -12,7 +12,7 @@ class TrackVisibility extends Component {
     } else {
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.intersectionRatio) {
+          if (entry.intersectionRatio > 0.1) {
             this.props.onVisible();
           }
         },
