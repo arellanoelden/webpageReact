@@ -4,8 +4,11 @@ import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import asyncComponent from "./components/AsyncComponent";
 
 const AsyncHome = asyncComponent(() => import("./pages/homepage"));
-const AsyncCode = asyncComponent(() => import("./pages/coolcode"));
+const AsyncNotes = asyncComponent(() => import("./pages/notes"));
+const AsyncNote = asyncComponent(() => import("./pages/note"));
 const AsyncProject = asyncComponent(() => import("./pages/projects"));
+// const AsyncBlogs = asyncComponent(() => import("./pages/blogs"));
+// const AsyncBlog = asyncComponent(() => import("./pages/blog"));
 
 class router extends Component {
   render() {
@@ -20,14 +23,15 @@ class router extends Component {
               <NavLink exact to="/projects" activeClassName="activeLink">
                 Projects
               </NavLink>
-              <NavLink exact to="/coolCode" activeClassName="activeLink">
-                Tips & Tricks
+              <NavLink exact to="/notes" activeClassName="activeLink">
+                Notes
               </NavLink>
             </span>
           </nav>
           <Route exact path="/" component={AsyncHome} />
           <Route exact path="/projects" component={AsyncProject} />
-          <Route exact path="/coolCode" component={AsyncCode} />
+          <Route exact path="/notes" component={AsyncNotes} />
+          <Route exact path="/notes/:id" component={AsyncNote} />
         </div>
       </Router>
     );
