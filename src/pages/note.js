@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Markdown from "react-markdown";
-import testMarkdown from "../notes/python.md";
+import python from "../notes/python.md";
+import react from "../notes/react.md";
 import "../styles/markdown.css";
 
 class note extends Component {
@@ -11,7 +12,8 @@ class note extends Component {
   }
   componentWillMount() {
     const map = {
-      1: testMarkdown
+      1: python,
+      2: react
     };
     const { id } = this.state;
     const mdFile = map[id];

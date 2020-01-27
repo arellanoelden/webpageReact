@@ -20,10 +20,24 @@ class notes extends Component {
               even created some AI's to beat some games such as 2048, blackjack,
               sudoku, etc. but even though I have used the language I wanted to
               make sure that I actually knew the langiage so here are some notes
-              I took about the beginnings of python and a lot of the
-              syntax/methods available in it.
+              I talk about the beginnings of python and a lot of the
+              syntax/methods available in it while making a simple Github star
+              checker.
             </p>
             <Link to="/notes/1">Python Notes</Link>
+          </article>
+          <article className="card notes-card">
+            <p>
+              I actually feel I know React quite well but at the same time I
+              think taking a course on it helps me learn some of the newer stuff
+              and get my feet wet with it, so I took a React course as a good
+              supplement. From this course in particular I learned more about
+              hooks, effects, context, error boundaries, and portals. I also got
+              a good review in general of everything react can do. In
+              particular, context seemed like a good substitue for redux in
+              certain situations.
+            </p>
+            <Link to="/notes/2">React Notes</Link>
           </article>
         </div>
       </section>
