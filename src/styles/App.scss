@@ -62,11 +62,19 @@ nav {
   display: flex;
   flex-direction: column;
   color: white;
+  background-color: $primary;
   &-container {
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $md) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
   &-card {
     padding: 1rem;
+    margin: 1rem;
     width: auto;
     height: auto;
     display: flex;
