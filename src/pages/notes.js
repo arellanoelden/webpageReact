@@ -39,6 +39,19 @@ class notes extends Component {
             </p>
             <Link to="/notes/2">React Notes</Link>
           </article>
+          <article className="card notes-card">
+            <p>
+              As is a common theme knowing something and using something are not
+              the same. My bread and butter and a front end engineer has been
+              using Javascript and so I make sure I know even the "hard parts"
+              of Javascript. This course was called just that, "Javascript: The
+              hard parts" where such topics such as the call stack, classes,
+              prototypal inheritence, closures, promises/async Javascript and
+              more. I actually also went through version 1 of the course but
+              didn't take markdown notes that time so here they are for v2!.
+            </p>
+            <Link to="/notes/3">Javascript Notes</Link>
+          </article>
         </div>
       </section>
     );
