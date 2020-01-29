@@ -48,7 +48,8 @@ class notes extends Component {
               hard parts" where such topics such as the call stack, classes,
               prototypal inheritence, closures, promises/async Javascript and
               more. I actually also went through version 1 of the course but
-              didn't take markdown notes that time so here they are for v2!.
+              didn't take markdown notes that time so here they are for version
+              2!.
             </p>
             <Link to="/notes/3">Javascript Notes</Link>
           </article>
